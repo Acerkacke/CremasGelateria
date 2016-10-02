@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.cramest.cremasgelateria.ActivityGelati"
+    android:background="@color/ColoreSfondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_tall_divider">
+
+        <TextView
+            android:text="Lista gelati di oggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            tools:text="Lista gelati di oggi"
+            android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/listViewGelati"
+            android:layout_weight="1"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/WebCaricamento" />
+
+</FrameLayout>

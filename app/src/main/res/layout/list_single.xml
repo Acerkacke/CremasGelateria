@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:src="@drawable/caricamento_gelato"
+        android:scaleType="centerCrop"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Gelato"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+</FrameLayout>
