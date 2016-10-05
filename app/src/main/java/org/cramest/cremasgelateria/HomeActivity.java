@@ -77,22 +77,22 @@ public class HomeActivity extends AppCompatActivity {
         ImageView imgView1 = (ImageView)findViewById(R.id.imageView1);
         imgView1.getLayoutParams().height = altezzaUno;
         imgView1.requestLayout();
-        ((TextView)findViewById(R.id.textView1)).setHeight(altezzaUno);
+        ((TextView)findViewById(R.id.textView1)).getLayoutParams().height = altezzaUno;
         //Secondo
         ImageView imgView2 = (ImageView)findViewById(R.id.imageView2);
         imgView2.getLayoutParams().height = altezzaUno;
         imgView2.requestLayout();
-        ((TextView)findViewById(R.id.textView2)).setHeight(altezzaUno);
+        ((TextView)findViewById(R.id.textView2)).getLayoutParams().height = altezzaUno;
         //Terzo
         ImageView imgView3 = (ImageView)findViewById(R.id.imageView3);
         imgView3.getLayoutParams().height = altezzaUno; //tanto per compensare se magari c'è qualche pixel vuoto
         imgView3.requestLayout();
-        ((TextView)findViewById(R.id.textView3)).setHeight(altezzaUno);
+        ((TextView)findViewById(R.id.textView3)).getLayoutParams().height = altezzaUno;
         //Quarto
         ImageView imgView4 = (ImageView)findViewById(R.id.imageView4);
         imgView4.getLayoutParams().height = altezzaUno+3; //tanto per compensare se magari c'è qualche pixel vuoto
         imgView4.requestLayout();
-        ((TextView)findViewById(R.id.textView4)).setHeight(altezzaUno);
+        ((TextView)findViewById(R.id.textView4)).getLayoutParams().height = altezzaUno+3;
 
     }
 
