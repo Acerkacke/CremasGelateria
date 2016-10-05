@@ -49,12 +49,12 @@
                     android:text="Gelati di oggi"
                     android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="132dp"
                     android:id="@+id/textView1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textAlignment="center"
                     android:textSize="36sp"
-                    android:fontFamily="sans-serif"/>
+                    android:fontFamily="sans-serif" />
 
             </FrameLayout>
             <FrameLayout
@@ -128,7 +128,8 @@
                     android:textAlignment="center"
                     android:textSize="36sp"
                     android:fontFamily="sans-serif"
-                    android:layout_height="132dp" />
+                    android:layout_height="132dp"
+                    android:textColor="@android:color/black" />
             </FrameLayout>
         </LinearLayout>
 

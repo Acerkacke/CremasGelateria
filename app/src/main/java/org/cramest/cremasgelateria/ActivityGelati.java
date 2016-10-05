@@ -4,11 +4,14 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import java.util.Date;
 
 public class ActivityGelati extends Activity implements DataHandler,BitmapHandler {
 
@@ -20,7 +23,6 @@ public class ActivityGelati extends Activity implements DataHandler,BitmapHandle
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         if (Conn.getInstance(this).isNetworkAvailable()) {
 
@@ -39,6 +41,8 @@ public class ActivityGelati extends Activity implements DataHandler,BitmapHandle
         } else {
             setContentView(R.layout.no_conn);
         }
+
+
 
     }
 

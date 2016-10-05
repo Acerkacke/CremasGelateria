@@ -1,6 +1,7 @@
 package org.cramest.cremasgelateria;
 
 import android.content.Intent;
+import android.support.annotation.IntegerRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -8,6 +9,8 @@ import android.view.Display;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -17,6 +20,38 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         impostaAltezzaElementi();
         impostaOnClick();
+        eAperta();
+    }
+
+    private void eAperta(){
+        TextView testo = (TextView)findViewById(R.id.textView4);
+        String giorno = GestoreTempo.getGiornoSett();
+        int apreAlleOre = 11;
+        int apreAlleMinuti = 30;
+        int chiudeAlleOre = 22;     //DA CAMBIARE, COSI NON FUNZIONA DEVO FARE TIPO DATEDIFF, PER ORA VA BENE
+        int chiudeAlleMinuti = 30;
+        switch (giorno){
+            case "Mon":
+            case "Tue":
+            case "Wed":
+            case "Thu":
+            case "Fri":
+                apreAlleOre=14;
+                break;
+            case "Sat":
+            case "Sun":
+                apreAlleOre=11;
+                break;
+        }
+        int ore = Integer.parseInt(GestoreTempo.getHour());
+        int minuti = Integer.parseInt(GestoreTempo.getMinutes());
+        if(ore > apreAlleOre && ore < chiudeAlleOre){
+            testo.setText("Ora aperto");
+            testo.setTextColor(getResources().getColor(R.color.ColorGreen));
+        }else{
+            testo.setText("Chiuso");
+            testo.setTextColor(getResources().getColor(R.color.ColorRed));
+        }
     }
 
     private void impostaOnClick(){
