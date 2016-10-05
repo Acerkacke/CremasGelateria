@@ -11,10 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:showDividers="middle"
-        android:divider="@drawable/empty_tall_divider">
+        android:divider="@drawable/empty_tall_divider"
+        android:showDividers="middle">
 
         <TextView
             android:text="Lista gelati di oggi"
@@ -23,7 +21,10 @@
             android:id="@+id/textView2"
             android:gravity="center"
             tools:text="Lista gelati di oggi"
-            android:textAppearance="@android:style/TextAppearance.Material.Title" />
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:textSize="40sp"
+            android:fontFamily="cursive"
+            android:textAlignment="center" />
 
         <android.support.v4.widget.SwipeRefreshLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -37,10 +38,5 @@
             android:layout_weight="1"/>
         </android.support.v4.widget.SwipeRefreshLayout>
     </LinearLayout>
-
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/WebCaricamento" />
 
 </FrameLayout>

@@ -35,9 +35,9 @@ public class ActivityGelati extends Activity implements DataHandler,BitmapHandle
                     swipeContainer.setRefreshing(false);
                 }
             });
-            mettiCaricamento();
+            //mettiCaricamento();
             mostraGelatiDiOggi();
-            togliCaricamento();
+            //togliCaricamento();
         } else {
             setContentView(R.layout.no_conn);
         }
@@ -52,7 +52,7 @@ public class ActivityGelati extends Activity implements DataHandler,BitmapHandle
         super.onStart();
     }
 
-    private void mettiCaricamento(){
+    /*private void mettiCaricamento(){
         WebView web = (WebView) findViewById(R.id.WebCaricamento);
         web.setBackgroundColor(Color.TRANSPARENT); //for gif without background
         web.loadUrl("file:///android_asset/gif.html");
@@ -61,7 +61,7 @@ public class ActivityGelati extends Activity implements DataHandler,BitmapHandle
     private void togliCaricamento(){
         WebView web = (WebView) findViewById(R.id.WebCaricamento);
         web.setVisibility(View.INVISIBLE);
-    }
+    }*/
 
     private void mostraGelatiDiOggi(){
         Conn.getInstance(this).GetDataFromWebsite(this, "getTodayIcecreams", null, "");

@@ -18,10 +18,10 @@
             android:layout_width="match_parent"
             android:id="@+id/textViewTitle"
             android:textAppearance="@android:style/TextAppearance.Material.Title"
-            android:textAlignment="center"
             android:fontFamily="cursive"
-            android:textSize="30sp"
-            android:layout_height="39dp" />
+            android:textSize="40sp"
+            android:layout_height="50dp"
+            android:textAlignment="center" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -43,7 +43,7 @@
                     android:scaleType="centerCrop"
                     android:padding="0dp"
                     android:elevation="0dp"
-                    app2:srcCompat="@drawable/caricamento_gelato" />
+                    app2:srcCompat="@drawable/cremas_bancone" />
 
                 <TextView
                     android:text="Gelati di oggi"
@@ -54,7 +54,8 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textAlignment="center"
                     android:textSize="36sp"
-                    android:fontFamily="sans-serif" />
+                    android:fontFamily="sans-serif"
+                    android:background="@color/SemiTrasparenza" />
 
             </FrameLayout>
             <FrameLayout
@@ -68,10 +69,11 @@
                     android:scaleType="centerCrop"
                     android:layout_height="132dp"
                     style="@android:style/Widget.Holo.ImageButton"
-                    android:padding="0dp"/>
+                    android:padding="0dp"
+                    app2:srcCompat="@drawable/granite_frutta" />
 
                 <TextView
-                    android:text="La gelateria"
+                    android:text="Granite"
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="132dp"
@@ -80,7 +82,8 @@
                     android:textAlignment="center"
                     android:textSize="36sp"
                     android:fontFamily="sans-serif"
-                    android:padding="0dp"/>
+                    android:padding="0dp"
+                    android:background="@color/SemiTrasparenza"/>
             </FrameLayout>
             <FrameLayout
                 android:layout_width="match_parent"
@@ -96,7 +99,7 @@
                     android:padding="0dp"/>
 
                 <TextView
-                    android:text="Dove siamo"
+                    android:text="Qualcosa"
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="132dp"
@@ -104,7 +107,8 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textAlignment="center"
                     android:textSize="36sp"
-                    android:fontFamily="sans-serif" />
+                    android:fontFamily="sans-serif"
+                    android:background="@color/SemiTrasparenza"/>
             </FrameLayout>
             <FrameLayout
                 android:layout_width="match_parent"
@@ -117,7 +121,8 @@
                     android:scaleType="centerCrop"
                     android:layout_height="132dp"
                     style="@android:style/Widget.Holo.ImageButton"
-                    android:padding="0dp"/>
+                    android:padding="0dp"
+                    app2:srcCompat="@drawable/orologio_orari" />
 
                 <TextView
                     android:text="Orari"
@@ -129,7 +134,8 @@
                     android:textSize="36sp"
                     android:fontFamily="sans-serif"
                     android:layout_height="132dp"
-                    android:textColor="@android:color/black" />
+                    android:textColor="@android:color/black"
+                    android:background="@color/SemiTrasparenza"/>
             </FrameLayout>
         </LinearLayout>
 

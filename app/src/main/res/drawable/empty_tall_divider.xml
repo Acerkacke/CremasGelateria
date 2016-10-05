@@ -3,7 +3,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="20dp"
     android:layout_width="match_parent">
     <size
-        android:height="20dp"
+        android:height="10dp"
         android:width="0dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
