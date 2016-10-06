@@ -15,13 +15,11 @@
         android:showDividers="middle">
 
         <TextView
-            android:text="Lista gelati di oggi"
+            android:text="Gelati di oggi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             android:gravity="center"
-            tools:text="Lista gelati di oggi"
-            android:textAppearance="@android:style/TextAppearance.Material.Title"
             android:textSize="40sp"
             android:fontFamily="cursive"
             android:textAlignment="center" />
