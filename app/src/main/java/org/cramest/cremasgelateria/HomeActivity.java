@@ -73,6 +73,13 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        imgView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,OrariActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void impostaAltezzaElementi(){

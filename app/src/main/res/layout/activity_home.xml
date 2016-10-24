@@ -91,7 +91,7 @@
 
                 <ImageButton
                     android:layout_width="match_parent"
-                    android:src="@drawable/caricamento_gelato"
+                    android:src="@drawable/semifreddo_caffe"
                     android:id="@+id/imageView3"
                     android:scaleType="centerCrop"
                     android:layout_height="132dp"
@@ -99,7 +99,7 @@
                     android:padding="0dp"/>
 
                 <TextView
-                    android:text="Qualcosa"
+                    android:text="Dolci semifreddi"
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="132dp"
